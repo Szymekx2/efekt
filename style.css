@@ -1,0 +1,214 @@
+body {
+    margin: 0 15px;
+    background: rgb(194,205,224);
+}
+
+header {
+    background: #fff;
+}
+
+#logo {
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+a.button {
+    position: relative;
+    margin: 0;
+    float: right;
+}
+
+nav ul li{
+    float: left;
+    margin: 0 20px;
+    list-style: none;
+}
+
+#top {
+    background: #fff;
+    padding-bottom: 80px; 
+}
+
+#sposoby {
+    position: relative;
+    background: rgb(194,205,224);
+    padding: 280px 50px;
+}
+
+#sposoby h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 40px;
+    font-size: 40px;
+}
+
+#sposoby a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 40px;
+}
+
+#zabiegi {
+    position: relative;
+    background: rgb(194,205,224);
+    padding: 210px 50px;
+}
+
+#zabiegi a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 40px;
+}
+
+#cennik {
+    position: relative;
+    background: rgb(194,205,224);
+    padding: 60px 50px;
+    margin: 20px 0 0 0;
+}
+
+#cennik a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 40px;
+}
+
+#cytat {
+    margin: 0 0 0 80px;
+}
+
+#cytat blockquote {
+    border: none;
+    float: left;
+}
+
+#cytat img {
+    float: right;
+    width: 200px;
+    margin: 0;
+    right: 0;
+}
+
+#poznaj {
+    position: relative;
+    background: rgb(194,205,224);
+    padding: 100px 50px;
+}
+
+#poznaj a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 40px;
+}
+
+#wiedza {
+    position: relative;
+    background: #fff;
+    border: 1px solid rgb(194,205,224);
+    padding: 100px 50px;
+}
+
+#wiedza a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 40px;
+}
+
+#instagram h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+}
+
+.kafelki {
+    padding: 0;
+    margin: 0;
+}
+
+.kafelki .zdj {
+    padding: 0;
+    margin: 0;
+}
+.kafelki img {
+    width: 100%;
+}
+
+#bottom {
+    background: #fff;
+    margin-top: 240px; /* strange */
+    padding: 80px;
+}
+
+#fundacja {
+    position: relative;
+    background: rgb(194,205,224);
+    padding: 100px 50px;
+}
+
+#fundacja a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 40px;
+}
+
+#prezent {
+    position: relative;
+    background: #fff;
+    border: 1px solid rgb(194,205,224);
+    padding: 100px 50px;
+}
+
+#prezent a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 40px;
+}
+
+#artvein {
+    position: relative;
+    background: #fff;
+    border: 1px solid rgb(194,205,224);
+    padding: 100px 50px;
+}
+
+#artvein a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 40px;
+}
+
+#cta {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 80px;
+}
+
+#cta h1 {
+    margin-top: 30px;
+    font-size: 100px;
+}
+
+footer {
+    background: #fff;
+}
