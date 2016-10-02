@@ -1427,6 +1427,10 @@ body {
     font-weight: 300;
 }
 
+h1,h2,h3,h4,h5,h6,p {
+    letter-spacing: 3;
+    font-weight: 300;
+}
 
 header {
     background: #fff;
@@ -1463,6 +1467,7 @@ header {
     border: 1px solid #388e34;
     padding: 5px 20px;
     background: #fff;
+    margin-right: 15px;
 }
 
 .button-green:hover {
@@ -1482,14 +1487,6 @@ nav ul li{
     padding-bottom: 80px; 
 }
 
-.spos {
-    padding-left: 0;
-}
-
-.zab {
-    padding-right: 0;
-}
-
 #sposoby {
     position: relative;
     background: url(img/10sposob.png) no-repeat top left;
@@ -1502,7 +1499,7 @@ nav ul li{
     top: 0;
     left: 0;
     margin: 40px;
-    font-size: 40px;
+    font-size: 55px;
     color: #fff;
 }
 
@@ -1511,9 +1508,8 @@ nav ul li{
     bottom: 0;
     right: 0;
     margin: 20px;
-    font-size: 40px;
-    color: #fff;
-    
+    font-size: 55px;
+    color: #fff;   
 }
 
 #zabiegi {
@@ -1528,7 +1524,7 @@ nav ul li{
     bottom: 0;
     right: 0;
     margin: 20px;
-    font-size: 40px;
+    font-size: 55px;
     color: #fff;
     padding-bottom: 10px;
 }
@@ -1545,28 +1541,39 @@ nav ul li{
     bottom: 0;
     right: 0;
     margin: 20px;
-    font-size: 40px;
+    font-size: 55px;
     color: #fff;
 }
 
 #cytat {
-    margin: 50px 0 0 80px;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+    
 }
 
 #cytat blockquote {
-    border: none;
-    float: left;
+    padding: 40px 0 40px 100px;
 }
 
 #cytat blockquote h2 {
-    line-height: 1
+    font-size: 33px;
+    line-height: 1.5
+}
+
+#img-wrapper {
+    flex: 0 1 auto;
+    margin-left: auto;
 }
 
 #cytat img {
-    float: right;
-    width: 200px;
+    width: 260px;
     margin: 0;
     right: 0;
+    bottom: 0;
     filter: grayscale(100%);
 }
 
@@ -1581,7 +1588,7 @@ nav ul li{
     bottom: 0;
     right: 0;
     margin: 20px;
-    font-size: 40px;
+    font-size: 55px;
     color: #fff;
 }
 
@@ -1597,7 +1604,7 @@ nav ul li{
     bottom: 0;
     right: 0;
     margin: 20px;
-    font-size: 40px;
+    font-size: 55px;
     color: #35568e;
 }
 
@@ -1620,13 +1627,27 @@ nav ul li{
     margin: 0;
 }
 .kafelki img {
-    width: 100%;
+    width: 100%;   
 }
 
-.zdj:hover ~ div {
-    filter: grayscale(100%);
-    opacity: 1;
+.color {
+    background-color: #062f74;
+    transition: opacity .3s ease-in-out;
 }
+
+.color img {
+    opacity: 1
+}
+
+.kafelki:hover img:not(:hover) {
+    opacity: .4;
+    -moz-transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+}
+
+
+
 
 #bottom {
     background: #fff;
@@ -1636,7 +1657,8 @@ nav ul li{
 
 #fundacja {
     position: relative;
-    background: rgb(194,205,224);
+    background: #35568e;
+    color: #fff;
     padding: 100px 50px;
 }
 
@@ -1644,14 +1666,15 @@ nav ul li{
     position: absolute;
     bottom: 0;
     right: 0;
-    margin: 20px;
-    font-size: 40px;
+    margin: 20px 10px 20px 0;
+    font-size: 55px;
 }
 
 #prezent {
     position: relative;
     background: #fff;
     border: 1px solid rgb(194,205,224);
+    color: rgb(194,205,224);
     padding: 100px 50px;
 }
 
@@ -1660,13 +1683,14 @@ nav ul li{
     bottom: 0;
     right: 0;
     margin: 20px;
-    font-size: 40px;
+    font-size: 55px;
 }
 
 #artvein {
     position: relative;
     background: #fff;
     border: 1px solid rgb(194,205,224);
+    color: rgb(194,205,224);
     padding: 100px 50px;
 }
 
@@ -1675,7 +1699,7 @@ nav ul li{
     bottom: 0;
     right: 0;
     margin: 20px;
-    font-size: 40px;
+    font-size: 55px;
 }
 
 #cta {
@@ -1792,15 +1816,41 @@ button.anime {
 }
 */
 
-.spos h3 {
-    width: 100px;
-    transition: width .5s linear;
-    -webkit-transition: width .5s linear;
-    -moz-transition: width .5s linear;
-    border-bottom: 3px solid #fff;
+a.huver h3:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px #fff;  
+  transform: scaleX(0);  
+  transition: transform 500ms ease-in-out;
+
 }
 
-.spos:hover h3{
-    width: 300px;
-    border-bottom-color: #fff;
+a.huver:hover h3:after {
+    transform: scaleX(1);
+}
+
+a.huver2 h3:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px #35568e;  
+  transform: scaleX(0);  
+  transition: transform 500ms ease-in-out;
+
+}
+
+a.huver2:hover h3:after {
+    transform: scaleX(1);
+}
+
+a.huver3 h3:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px rgb(194,205,224);  
+  transform: scaleX(0);  
+  transition: transform 500ms ease-in-out;
+
+}
+
+a.huver3:hover h3:after {
+    transform: scaleX(1);
 }
