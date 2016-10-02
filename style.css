@@ -1433,6 +1433,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 header {
+    padding-top: 10px;
     background: #fff;
 }
 
@@ -1644,10 +1645,8 @@ nav ul li{
     -moz-transition: opacity .3s ease-in-out;
     -webkit-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
 }
-
-
-
 
 #bottom {
     background: #fff;
